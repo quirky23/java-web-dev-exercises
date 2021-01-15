@@ -6,7 +6,6 @@ public class ArrayListPractice {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>();
 
-        int sum = 0;
         numbers.add(1);
         numbers.add(3);
         numbers.add(4);
@@ -19,14 +18,21 @@ public class ArrayListPractice {
         numbers.add(17);
         numbers.add(23);
         numbers.add(46);
-    for (Integer number : numbers) {
-        ArrayList<Integer> evens = new ArrayList<>();
-        if ((number % 2) == 0) {
-            evens.add(number);
-            for (int i = 0; i < evens.size(); i++)
-                sum += evens.get(i);
-        }
-        } System.out.println(sum);
+
+        dostuff(numbers);
+    }
+
+        public static void dostuff(ArrayList<Integer> numbers) {
+            int sum = 0;
+            for (Integer number : numbers) {
+                ArrayList<Integer> evens = new ArrayList<>();
+                if ((number % 2) == 0) {
+                    evens.add(number);
+                    for (int i = 0; i < evens.size(); i++)
+                        sum += evens.get(i);
+                }
+            } System.out.println(sum);
+
         }
     }
 

@@ -9,7 +9,7 @@ public class ArrayList2 {
         String list;
         Scanner input = new Scanner(System.in);
         Scanner input2 = new Scanner(System.in);
-        System.out.println("Enter world length to search: ");
+        System.out.println("Enter word length to search: ");
         letters = input.nextInt();
         System.out.println("Enter phrase to check: ");
         list = input2.nextLine();

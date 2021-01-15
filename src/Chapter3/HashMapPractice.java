@@ -15,15 +15,19 @@ public class HashMapPractice {
             newStudent = input.nextLine();
             if (!newStudent.equals("")) {
                 System.out.print("ID #: ");
-                int id = input.nextInt();
+                Integer id = input.nextInt();
                 students.put(id, newStudent);
                 input.nextLine();
+
             }
+
         }
         while (!newStudent.equals(""));
+        input.close();
         System.out.print("Students:\n");
         for (Map.Entry<Integer, String> student : students.entrySet()) {
             System.out.println("ID# " + student.getKey() + ": " + student.getValue());
+            System.out.println("Total Students: " + students.size());
         }
     }
 }

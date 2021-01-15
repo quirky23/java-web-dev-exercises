@@ -24,7 +24,7 @@ public class Counting {
                 else {
                     occurrences.put(letter, 1);
                 }
-            } for (Map.Entry entry : occurrences.entrySet()) {
+            } for (Map.Entry<Character, Integer> entry : occurrences.entrySet()) {
                 System.out.println(entry.getKey() + ":" + entry.getValue());
             }
         }
